@@ -1,0 +1,51 @@
+.card {
+  width: 280px;
+  margin: 0 auto;
+  background-color: #373b69;
+  overflow: hidden;
+  position: relative;
+  transition: 1s;
+}
+img {
+  object-fit: cover;
+  height: 350px;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.movie-info {
+  height: 80px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.overview {
+  background: white;
+
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  padding: 15px;
+  transition: 1s;
+  overflow: auto;
+  transform: translateY(500px);
+}
+.card:hover .overview {
+  transform: translateY(200px);
+  /* height: 100%;
+  opacity: 1; */
+}
+.card:hover .overlay {
+  background-color: #373b69a8;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  transition: 1s;
+}
